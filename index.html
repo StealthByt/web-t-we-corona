@@ -1,86 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subdomain Takeover PoC</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            max-width: 800px; 
-            margin: 50px auto; 
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container { 
-            background: white; 
-            padding: 30px; 
-            border-radius: 10px; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .header { 
-            color: #d32f2f; 
-            border-bottom: 2px solid #d32f2f; 
-            padding-bottom: 10px;
-        }
-        .info { 
-            background: #fff3cd; 
-            border: 1px solid #ffeaa7; 
-            border-radius: 5px; 
-            padding: 15px; 
-            margin: 20px 0;
-        }
-        .footer { 
-            font-size: 0.9em; 
-            color: #666; 
-            margin-top: 30px;
-            text-align: center;
-        }
-    </style>
+    <title>Subdomain Takeover - hackwhiz</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="header">🚨 Subdomain Takeover Proof of Concept</h1>
-        
-        <div class="info">
-            <p><strong>Status:</strong> This subdomain has been successfully taken over for security research purposes.</p>
-        </div>
-        
-        <h2>Technical Details</h2>
-        <ul>
-            <li><strong>Vulnerable Subdomain:</strong> test-corona.xerius.be</li>
-            <li><strong>Azure App Service:</strong> web-t-we-corona.azurewebsites.net</li>
-            <li><strong>Takeover Date:</strong> sex 04 jul 2025 17:44:43 -03</li>
-            <li><strong>Method:</strong> Azure App Service Registration</li>
-            <li><strong>Program:</strong> Xerius Bug Bounty (Intigriti)</li>
-        </ul>
-        
-        <h2>Impact</h2>
-        <p>This vulnerability allows an attacker to:</p>
-        <ul>
-            <li>Host malicious content on a trusted Xerius subdomain</li>
-            <li>Conduct phishing attacks using the legitimate domain</li>
-            <li>Steal credentials and sensitive information</li>
-            <li>Damage Xerius's reputation and brand trust</li>
-        </ul>
-        
-        <h2>Remediation</h2>
-        <p>To fix this vulnerability:</p>
-        <ol>
-            <li>Remove the DNS CNAME record pointing to the Azure App Service</li>
-            <li>If the App Service is still needed, ensure it's properly configured</li>
-            <li>Implement DNS monitoring to detect dangling records</li>
-            <li>Regular audits of DNS records and cloud resources</li>
-        </ol>
-        
-        <div class="footer">
-            <!-- PoC by [YOUR_IDENTIFIER] for Intigriti Bug Bounty Program -->
-            <p>This is a responsible security disclosure for the Xerius Bug Bounty Program</p>
-            <p>Researcher: [YOUR_IDENTIFIER] | Platform: Intigriti | Date: sex 04 jul 2025 17:44:43 -03</p>
-        </div>
-    </div>
+    <h1>Subdomain Takeover Demonstration</h1>
+    <p>Domain: test-corona.xerius.be</p>
+    <p>Researcher: hackwhiz</p>
+    <p>Date: July 4, 2025</p>
+    <p>This subdomain has been taken over for security research purposes.</p>
     
-    <!-- Verification token for automated tools -->
-    <!-- XERIUS_TAKEOVER_CONFIRMED_TEST-CORONA_XERIUS_BE -->
+    <hr>
+    
+    <h2>Technical Details:</h2>
+    <ul>
+        <li>Original CNAME: web-t-we-corona.azurewebsites.net</li>
+        <li>Azure App Service: Non-existent</li>
+        <li>Takeover Method: Vercel deployment</li>
+        <li>Verification: hackwhiz_verification_token_test_corona</li>
+    </ul>
+    
+    <p><small>This is a responsible disclosure for Xerius Bug Bounty Program</small></p>
 </body>
 </html>
